@@ -32,76 +32,20 @@
         font-size: 2em;
     }
     
-    .page2 {
-        background-color: white;
-        border-radius: 4px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        text-align: center;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .page2 img {
-        width: 900px;
-        height: 1200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .page3 {
-        z-index: 1;
-        text-align: center;
-    }
-    
-    .text1 {
-        font-family: 'Libre Baskerville', serif;
-        padding-top: 70%;
-        font-size: 1.8em;
-    }
-    
-    .text2 {
-        font-family: 'Lato', sans-serif;
-        font-size: smaller;
-    }
-    
-    .text3 {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 2em;
-    }
-    
-    .text4 {
-        font-family: 'Arimo', sans-serif;
-        font-size: smaller;
-    }
-    /* 2340x1080 pixels at 476ppi */
-    
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
         .page2 img {
             width: 300px;
-            height: 500px;
+            height: 550px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
-        .text1 {
-            padding-top: 80%;
-            font-size: .6em;
-        }
-        .text2 {
-            font-size: .4em;
-        }
-        .text3 {
-            font-size: .8em;
-        }
-        .text4 {
-            font-size: .4em;
-            line-height: .5em;
+        .page3 {
+            z-index: 1;
+            font-size: small;
+            text-align: center;
+            line-height: normal;
         }
     }
 </style>
