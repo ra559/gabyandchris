@@ -9,70 +9,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Parisienne&family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato:wght@300&family=Libre+Baskerville:ital@1&family=Quicksand:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <style>
-    * {
+    *,
+    p {
         padding: 0%;
         margin: 0%;
-        box-sizing: border-box;
         transition: all 0.2s ease-in-out;
     }
     
     body {
-        width: 100%;
+        width: 80%;
         height: 100vh;
-        background: #27B3CA;
-        display: grid;
-        place-items: center;
+        background: linear-gradient(90deg, rgba(249, 229, 231, 1) 0%, rgba(249, 229, 231, 1) 35%, rgba(237, 242, 220, 1) 100%);
+    }
+    
+    .page3 {
+        border: 1px solid red;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-image: url('butterfly.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .text1 {
+        padding-top: 60%;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 4em;
+        line-height: 2em;
+    }
+    
+    .text2 {
+        font-family: 'Arimo', sans-serif;
+        font-size: 2em;
+        line-height: 2em;
+    }
+    
+    .text3 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 6em;
+    }
+    
+    .text4 {
         font-family: 'Lato', sans-serif;
         font-size: 2em;
-    }
-    
-    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-        .page2 img {
-            width: 300px;
-            height: 550px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .page3 {
-            z-index: 1;
-            font-size: small;
-            text-align: center;
-            line-height: normal;
-        }
-    }
-    
-    @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
-        .page2 img {
-            width: 350px;
-            height: 600px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .page3 {
-            z-index: 1;
-            font-size: small;
-            text-align: center;
-            line-height: normal;
-        }
+        line-height: 1em;
+        padding-bottom: 5%;
     }
 </style>
 
 <body>
-    <div class="container page2" id="card">
-        <img src="butterfly.jpg" alt="">
-    </div>
-    <div class="page3">
 
+    <div class="container page3">
         <p class="text1">Butterflies kisses & baby wishes</p>
         <p class="text2">JOIN US FOR A SHIMMERING, </p>
         <p class="text2"> SPARKLING BABY SHOWER HONORING</p>
