@@ -40,10 +40,11 @@
         background-image: url('butterfly.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
     
     .text1 {
-        padding-top: 60%;
+        padding-top: 70%;
         font-family: 'Libre Baskerville', serif;
         font-size: 4em;
         line-height: 2em;
@@ -58,13 +59,60 @@
     .text3 {
         font-family: 'Quicksand', sans-serif;
         font-size: 6em;
+        line-height: 2.5em;
     }
     
     .text4 {
         font-family: 'Lato', sans-serif;
         font-size: 2em;
-        line-height: 1em;
+        line-height: .5em;
         padding-bottom: 5%;
+    }
+    
+    @media only screen and (max-width: 1288px) {
+        .page3 {
+            border: 1px solid green;
+        }
+        .text1 {
+            font-size: 3em;
+            line-height: 2em;
+        }
+        .text2 {
+            font-size: 2em;
+            line-height: 2em;
+        }
+        .text3 {
+            font-size: 5em;
+            line-height: 2em;
+        }
+        .text4 {
+            font-size: 1.7em;
+            line-height: .5em;
+            padding-bottom: 5%;
+        }
+    }
+    
+    @media only screen and (max-width: 1288px) {
+        .page3 {
+            border: 1px solid purple;
+        }
+        .text1 {
+            font-size: 2em;
+            line-height: 2em;
+        }
+        .text2 {
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+        .text3 {
+            font-size: 4em;
+            line-height: 2em;
+        }
+        .text4 {
+            font-size: 1.5em;
+            line-height: .5em;
+            padding-bottom: 5%;
+        }
     }
 </style>
 
