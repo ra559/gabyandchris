@@ -89,6 +89,31 @@
             font-family: 'Lato', sans-serif;
         }
         
+        .msg1,
+        .msg2,
+        .msg3,
+        .msg4,
+        .msg5 {
+            line-height: 2em;
+        }
+        
+        .msg1 {
+            font-size: xx-large;
+        }
+        
+        .msg2,
+        .msg3 {
+            font-size: x-large;
+        }
+        
+        .msg4 {
+            font-size: xx-large;
+        }
+        
+        .msg5 {
+            font-size: large;
+        }
+        
         @media only screen and (min-width: 1000px) {
             .card {
                 flex-direction: row-reverse;
@@ -98,12 +123,47 @@
                 max-width: 30vw;
                 max-height: unset;
             }
-            .msg1,
+        }
+        /* Pixel 2, Pixel 2XL, Iphone 6,7,8, */
+        
+        @media only screen and (min-width: 400px) {
+            .msg1 {
+                font-size: x-large;
+            }
             .msg2,
-            .msg3,
-            .msg4,
+            .msg3 {
+                font-size: medium;
+            }
+            .msg4 {
+                font-size: xx-large;
+            }
             .msg5 {
-                line-height: 2em;
+                font-size: medium;
+            }
+        }
+        /* Iphone 5S/E */
+        
+        @media only screen and (min-width: 280px) {
+            .card {
+                flex-direction: row-reverse;
+            }
+            .card img.birthday {
+                width: 100%;
+                max-width: 30vw;
+                max-height: unset;
+            }
+            .msg1 {
+                font-size: medium;
+            }
+            .msg2,
+            .msg3 {
+                font-size: small;
+            }
+            .msg4 {
+                font-size: medium;
+            }
+            .msg5 {
+                font-size: small;
             }
         }
         
@@ -120,6 +180,7 @@
                 width: 100%;
                 max-width: 100px;
                 height: auto;
+                display: none;
             }
         }
     </style>
