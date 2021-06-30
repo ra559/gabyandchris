@@ -77,6 +77,11 @@
             overflow: hidden;
         }
         
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
         body {
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
@@ -94,13 +99,60 @@
                 background-position: 0% 50%;
             }
         }
+        /* media query 756*/
+        
+        @media screen and (max-width: 660px) {
+            .msg1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media screen and (max-width: 542px) {
+            .msg1 {
+                font-size: 2rem;
+            }
+            .msg4 {
+                font-size: 2em;
+            }
+        }
+        
+        @media screen and (max-width: 308px) {
+            .card img {
+                width: 100px;
+                height: 100px;
+            }
+            .msg1 {
+                font-size: 1.6rem;
+            }
+            .msg4 {
+                font-size: 1.8em;
+            }
+        }
+        
+        @media screen and (max-width: 242px) {
+            .card img {
+                width: 80px;
+                height: 80px;
+            }
+            .msg1 {
+                font-size: 1.2rem;
+            }
+            .msg4 {
+                font-size: 1.3em;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: .8rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="card">
         <div class="text">
-            <img src="butterfly (1).png" width="200" height="200">
+            <img src="butterfly (1).png">
             <p class="msg1 ">Butterfly kisses & baby wishes</p>
             <p class="msg2 ">JOIN US FOR A SHIMMERING,<br> SPARKLING BABY SHOWER HONORING</p>
             <p class="msg4 ">Gabby and Chris</p>
