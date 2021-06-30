@@ -28,6 +28,7 @@
             height: 100vh;
             margin: 0;
             font-family: 'Open Sans', sans-serif;
+            line-height: 1rem;
         }
         
         .card {
@@ -58,7 +59,6 @@
         .msg3,
         .msg4,
         .msg5 {
-            line-height: .5rem;
             font-size: 2rem;
             color: whitesmoke;
         }
@@ -83,14 +83,71 @@
             font-size: 3.5rem;
         }
         
+        @media screen and (min-width: 600px) {
+            .msg1 {
+                font-size: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .msg4 {
+                font-family: 'Lato', sans-serif;
+                font-size: 3.5rem;
+            }
+        }
+        
         @media screen and (max-width: 660px) {
             .msg1 {
                 font-size: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .msg4 {
+                font-family: 'Lato', sans-serif;
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media screen and (max-width: 360px) {
+            .msg1 {
+                font-size: 1rem;
+                margin-top: .5rem;
+                margin-bottom: .5rem;
             }
             .msg2,
             .msg3,
             .msg5 {
                 font-size: 1rem;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {
+            .msg1 {
+                font-size: 2.2rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1.1rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .msg4 {
+                font-family: 'Lato', sans-serif;
+                font-size: 3rem;
             }
         }
     </style>
