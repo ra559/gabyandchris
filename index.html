@@ -3,125 +3,291 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Parisienne&family=Quicksand:wght@700&display=swap" rel="stylesheet">
-    <!--
-
-    font-family: 'Lato', sans-serif;
-font-family: 'Parisienne', cursive;
-font-family: 'Quicksand', sans-serif;
--->
-    <title>Gabby & Chris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Lato:wght@300&family=Libre+Baskerville:ital@1&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <title>Gabby and Chris Baby shower invitation</title>
+    <style>
+        * {
+            transition: all 0.2s ease-in-out;
+        }
+        
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1rem;
+        }
+        
+        .card {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .text {
+        
+            height: 85vh;
+            width: 80vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            overflow: hidden;
+            #background: rgb(6, 24, 47);
+            background: radial-gradient(circle, rgba(249, 229, 231) 0%, rgba(255, 255, 255, 0) 50%);
+        }
+        
+        .msg1,
+        .msg2,
+        .msg3,
+        .msg4,
+        .msg5 {
+            font-size: 2rem;
+            color: black;
+            font-weight: medium;
+        
+        }
+        
+        .msg1 {
+            font-family: 'Clicker Script', cursive;
+            font-size: 5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: medium;
+        }
+        
+        .msg2,
+        .msg3,
+        .msg5 {
+            font-family: 'Lato', sans-serif;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: medium;
+        }
+        
+        .msg4 {
+            font-family: 'Lato', sans-serif;
+            font-size: 3.5rem;
+            font-weight: medium;
+        }
+        
+        a {
+            text-decoration: none;
+            color: violet;
+        }
+        
+        @media screen and (max-width: 360px) {
+            .text {
+                height: 85vh;
+                width: 90vw;
+            }
+            .msg1,
+            .msg2,
+            .msg3,
+            .msg4,
+            .msg5 {
+                font-size: 1rem;
+                margin: 0px;
+                margin-top: 2rem;
+            }
+            .msg1 {
+                font-size: 2rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1rem;
+            }
+            .msg4 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 411px) {
+            .text {
+                height: 85vh;
+                width: 90vw;
+            }
+            .msg1,
+            .msg2,
+            .msg3,
+            .msg4,
+            .msg5 {
+                font-size: 1rem;
+                margin: 0px;
+                margin-top: 2rem;
+            }
+            .msg1 {
+                font-size: 2rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1rem;
+            }
+            .msg4 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 320px) {
+            .text {
+                height: 85vh;
+                width: 95vw;
+            }
+            .msg1,
+            .msg2,
+            .msg3,
+            .msg4,
+            .msg5 {
+                font-size: 1rem;
+                margin: 0px;
+                margin-top: 2rem;
+            }
+            .msg1 {
+                font-size: 2rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1rem;
+            }
+            .msg4 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 414px) {
+            .text {
+                height: 85vh;
+                width: 95vw;
+            }
+            .msg1,
+            .msg2,
+            .msg3,
+            .msg4,
+            .msg5 {
+                font-size: 1rem;
+                margin: 0px;
+                margin-top: 2rem;
+            }
+            .msg1 {
+                font-size: 2rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1rem;
+            }
+            .msg4 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .text {
+                height: 85vh;
+                width: 95vw;
+            }
+            .msg1,
+            .msg2,
+            .msg3,
+            .msg4,
+            .msg5 {
+                font-size: 2rem;
+                margin: 0px;
+                margin-top: 3rem;
+            }
+            .msg1 {
+                font-size: 4rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 2rem;
+            }
+            .msg4 {
+                font-size: 4rem;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .text {
+                height: 85vh;
+                width: 95vw;
+            }
+            .msg1,
+            .msg2,
+            .msg3,
+            .msg4,
+            .msg5 {
+                font-size: 1rem;
+                margin: 0px;
+                margin-top: 2rem;
+            }
+            .msg1 {
+                font-size: 2rem;
+            }
+            .msg2,
+            .msg3,
+            .msg5 {
+                font-size: 1rem;
+            }
+            .msg4 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-image: url(butterfly.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 80%;
-        height: 100vh;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .table td {
-        padding: 10px;
-    }
-    
-    .table .butterfiles p {
-        margin-bottom: 0px;
-    }
-    
-    .container-fluid {
-        border: 1px solid black;
-        width: 80%;
-        margin-top: 65%;
-    }
-    
-    .table {
-        border: 1px solid black;
-        text-align: center;
-        width: 100%;
-        margin: auto;
-    }
-    
-    .butterfiles {
-        font-family: 'Parisienne', cursive;
-        font-size: 3em;
-    }
-    
-    .join {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.5em;
-    }
-    
-    .gandc h1 {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 4em;
-    }
-    
-    .rest {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 2em;
-    }
-</style>
 
-<body>
+<body id='body'>
+    <div class="card">
+        <div class="text">
+            <p class="msg1">Butterfly kisses & baby wishes</p>
+            <p class="msg2">JOIN US FOR A SHIMMERING, </p>
+            <p class="msg3"> SPARKLING BABY SHOWER HONORING</p>
+            <p class="msg4">Gabby and Chris</p>
+            <p class="msg5">SATURDAY AUG 21ST, 4:00 PM - 11:00 PM</p>
+            <p class="msg5"> GABBY'S HOUSE</p>
+            <p class="msg5">RSVP & DIRECTIONS</p>
+            <p class="msg5">GABBY@973.336.2937</p>
+            <p class="msg5">REGISTERED ON
+                <a href="https://www.amazon.com/baby-reg/2AN55MGFR7HV8 "> <b> AMAZON</a></b> </p>
+        </div>
+    </div>
 
+    <script>
+        VANTA.BIRDS({
+          el: "#body",
+          mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0xf9e5e7,
+  colorMode: "variance"
+        })
+        </script>
 </body>
-<div class="container-fluid">
-    <table class="table">
-        <tr>
-            <td class="butterfiles">
-                <p>Butterflies kisses & baby wishes</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p class="join">JOIN US FOR A SHIMMERING, <br> SPARKLING BABY SHOWER HONORING</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="gandc">
-                <h1>Gabby and Chris</h1>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2 class="rest">SATURDAY AUGUST 21ST 4P-11P</h2>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2>GABBY'S HOUSE</h2>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2>RSVP & DIRECTIONS</h2>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2>GABBY@973.336.2937</h2>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h2>REGISTERED ON AMAZON</h2>
-            </td>
-        </tr>
-    </table>
-
-</div>
 
 </html>
